@@ -1,12 +1,16 @@
+import {Link} from 'react-router-dom'
 const Header = () => {
     return (
-        <header>
+        <header className='bg-[black] text-white'>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Products</li>
-                    <li>Cart</li>
-                    <li>Checkout</li>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/products">Products</Link>
+                    </li>
+                    
                 </ul>
             </nav>
         </header>

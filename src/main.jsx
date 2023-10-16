@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import './index.css';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -7,10 +8,13 @@ import {
 import App from './App.jsx'
 import Home from './pages/home/home.jsx';
 import Contact from './pages/Contact/Contact.jsx';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
+import Products from './pages/Products/Products.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
@@ -19,11 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path: "products",
-        element: null,
-      },
-      {
-        path: "contact",
-        element: <Contact />,
+        element: <Products />,
       }
   ]
 
