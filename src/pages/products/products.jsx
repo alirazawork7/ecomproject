@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import ProductItem from "../../components/Products/ProductItem";
+import Spinner from "../../components/Ui/Spinner/Spinner";
 const Products = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
@@ -11,7 +12,7 @@ const Products = () => {
         fetchPosts();
     }, [])
     const uiElementsArr = products.map((element) => {
-        return <ProductItem key={element.id} title={element.title} price={element.price} image={element.image} />
+        return <ProductItem key={element.id} id={element.id} title={element.title} price={element.price} image={element.image} />
     })
     return (
         <div className="bg-[#6cb5e7]">
@@ -19,6 +20,7 @@ const Products = () => {
             <h2 className="text-center mb-[60px] text-4xl font-bold text-white">
                 Products
             </h2>
+            {uiElementsArr.length === 0 && <Spinner />}
             <div className="grid grid-cols-4 gap-5">
                 {uiElementsArr}
             </div>
