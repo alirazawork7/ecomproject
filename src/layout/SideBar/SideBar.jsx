@@ -13,7 +13,7 @@ const SideBar = (props) => {
         fetchCategories();
     }, [])
     return (
-        <div className="fixed left-0 top-[48px] bg-[white] w-[320px] h-[calc(100vh-48px)] shadow-[rgba(50,50,93,0.25)_0px_2px_5px_-1px,rgba(0,0,0,0.3)_0px_1px_3px_-1px]">
+        <div className="fixed left-0 top-[80px] bg-[white] w-[320px] h-[calc(100vh-48px)] shadow-[rgba(50,50,93,0.25)_0px_2px_5px_-1px,rgba(0,0,0,0.3)_0px_1px_3px_-1px]">
            <form>
                 <input onChange={props.onSearch} id="search" value={props.search} type='text' placeholder='Search' className='shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,rgba(0,0,0,0.3)_0px_3px_7px_-3px] w-[100%] p-[20px]'></input>
            </form>

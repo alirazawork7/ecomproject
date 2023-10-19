@@ -11,6 +11,7 @@ import Contact from './pages/Contact/Contact.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import Products from './pages/Products/Products.jsx';
 import ProductDetail from './pages/productDetail/ProductDetail';
+import SignIn from './pages/SignIn/SignIn';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "products/:id",
         element: <ProductDetail />,
+      },
+      {
+        path: "login",
+        element: <SignIn />,
       }
   ]
 
