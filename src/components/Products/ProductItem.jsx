@@ -8,8 +8,8 @@ const ProductItem = (props) => {
                         <img className="h-[160px]" src={props.image}></img>
                     </div>
                     
-                    <h3 className="text-center text-xl mb-[10px] font-semibold">{props.title}</h3>
-                    <h4 className="text-center text-lg font-medium mb-[5px]">Price: {props.price}Rs</h4>
+                    <h5 className="text-center mb-[10px] font-semibold">{props.title}</h5>
+                    <h6 className="text-center font-medium mb-[5px]">Price: {props.price}Rs</h6>
                     
                 </div>
             </Link>

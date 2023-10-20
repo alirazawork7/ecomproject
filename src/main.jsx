@@ -9,7 +9,7 @@ import App from './App.jsx'
 import Home from './pages/home/home.jsx';
 import Contact from './pages/Contact/Contact.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
-import Products from './pages/Products/Products.jsx';
+import Products from './pages/products/products.jsx';
 import ProductDetail from './pages/productDetail/ProductDetail';
 import SignIn from './pages/SignIn/SignIn';
 const router = createBrowserRouter([
