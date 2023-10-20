@@ -23,7 +23,7 @@ function App() {
       copyFindedElement.quantity = copyFindedElement.quantity + 1;
       // console.log((copyFindedElement.price + data.price).toFixed(2))
      
-      copyFindedElement.price = copyFindedElement.price + data.price;
+      copyFindedElement.price = Number((copyFindedElement.price + data.price).toFixed(2));
       
       const index = copyCart.items.findIndex((element) => {
         return element.id === data.id
